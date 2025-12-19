@@ -1,174 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Get a Quote - Test Excavating & Refining</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote – Ben Excavating & Refining</title>
+    <meta name="description" content="Request a quote from Ben Excavating & Refining – Professional excavation and refining contractors.">
     <style>
-        body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        background-color: #ededed;
-        color: #1a1a1a;
-    }
-
-    header {
-        background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
-        color: white;
-        padding: 35px 20px;
-        text-align: center;
-        border-bottom: 8px solid #ff8c00;
-    }
-
-    header img {
-        max-width: 190px;
-        display: block;
-        margin: 0 auto 15px;
-        filter: drop-shadow(0 3px 5px rgba(0,0,0,0.4));
-    }
-
-    nav {
-        background-color: #ff8c00;
-        padding: 14px;
-        text-align: center;
-    }
-
-    nav a {
-        color: #1a1a1a;
-        margin: 0 20px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 16px;
-    }
-
-    nav a:hover {
-        color: white;
-        text-decoration: underline;
-    }
-
-    .container {
-        padding: 35px;
-        max-width: 900px;
-        margin: 35px auto;
-        background-color: #ffffff;
-        border-radius: 6px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        border-top: 6px solid #ff8c00;
-    }
-
-    h2 {
-        color: #1a1a1a;
-        border-left: 6px solid #ff8c00;
-        padding-left: 12px;
-        margin-top: 0;
-    }
-
-    footer {
-        background-color: #1a1a1a;
-        color: #d0d0d0;
-        text-align: center;
-        padding: 25px;
-        margin-top: 40px;
-        border-top: 6px solid #ff8c00;
-    }
-
-    .call-button {
-        background: linear-gradient(135deg, #ff8c00, #e67600);
-        color: white;
-        padding: 14px 30px;
-        border: none;
-        cursor: pointer;
-        font-size: 17px;
-        border-radius: 5px;
-        font-weight: bold;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.25);
-    }
-
-    .call-button:hover {
-        transform: scale(1.05);
-        background: linear-gradient(135deg, #e67600, #ff8c00);
-    }
-
-    .container {
-        padding: 30px;
-        max-width: 900px;
-        margin: 30px auto;
-        background-color: #ffffff;
-        border-radius: 6px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-        color: #1f1f1f;
-        border-left: 5px solid #ff8c00;
-        padding-left: 10px;
-    }
-
-    footer {
-        background-color: #1f1f1f;
-        color: #bfc3c7;
-        text-align: center;
-        padding: 20px;
-        margin-top: 40px;
-    }
-
-    .call-button {
-        background-color: #ff8c00;
-        color: #ffffff;
-        padding: 12px 25px;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-        border-radius: 4px;
-        font-weight: bold;
-    }
-
-    .call-button:hover {
-        background-color: #e67e00;
-    }
+        /* SAME STYLES AS INDEX */
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: Arial, sans-serif; background:#ededed; color:#1a1a1a; }
+        header { background:#1a1a1a; border-bottom:8px solid #ff8c00; }
+        .header-container { display:flex; align-items:center; justify-content:space-between; max-width:1200px; margin:auto; padding:20px 40px; }
+        .logo { max-width:150px; }
+        .business-name { flex-grow:1; text-align:center; color:white; }
+        .business-name h1 { font-size:32px; margin-bottom:5px; }
+        .business-name p { font-size:16px; color:#d0d0d0; }
+        nav { background:#ff8c00; }
+        nav ul { list-style:none; display:flex; justify-content:center; }
+        nav ul li { margin:0 20px; }
+        nav ul li a { text-decoration:none; color:#1a1a1a; font-weight:bold; font-size:16px; }
+        nav ul li a:hover { color:white; }
+        .container { max-width:900px; margin:30px auto; background:#fff; padding:30px; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.15); border-top:6px solid #ff8c00; }
+        h2 { border-left:6px solid #ff8c00; padding-left:12px; margin-bottom:15px; margin-top:0; }
+        p, label { margin-bottom:15px; line-height:1.6; display:block; }
+        input, textarea { width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:4px; }
+        .submit-button { background:linear-gradient(135deg,#ff8c00,#e67600); color:white; padding:14px 30px; border:none; cursor:pointer; font-size:17px; border-radius:5px; font-weight:bold; box-shadow:0 4px 6px rgba(0,0,0,0.25); transition: transform 0.2s, background 0.3s; }
+        .submit-button:hover { transform:scale(1.05); background:linear-gradient(135deg,#e67600,#ff8c00); }
+        footer { background:#1a1a1a; color:#d0d0d0; text-align:center; padding:25px; margin-top:40px; border-top:6px solid #ff8c00; }
+        @media (max-width:768px) { .header-container { flex-direction:column; text-align:center; } nav ul { flex-direction:column; } nav ul li { margin:10px 0; } }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Get a Quote</h1>
+    <div class="header-container">
+        <img src="logo.png" alt="Ben Excavating & Refining Logo" class="logo">
+        <div class="business-name">
+            <h1>Ben Excavating & Refining</h1>
+            <p>Professional Excavating & Refining Contractors</p>
+        </div>
+    </div>
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="quote.html">Get a Quote</a>
-    <a href="about.html">About Us</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quote.html">Get a Quote</a></li>
+        <li><a href="about.html">About Us</a></li>
+    </ul>
 </nav>
 
 <div class="container">
-    <p>Fill out the form below and we’ll contact you shortly.</p>
+    <h2>Get a Quote</h2>
+    <form action="YOUR_FORM_ACTION_HERE" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <form action="https://formspree.io/f/ACTION_URL_HERE" method="POST">
-        <label>Name</label>
-        <input type="text" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-        <label>Phone Number</label>
-        <input type="text" name="phone" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
 
-        <label>Email</label>
-        <input type="email" name="email" required>
+        <label for="details">Project Details:</label>
+        <textarea id="details" name="details" rows="5" required></textarea>
 
-        <label>Job Details</label>
-        <textarea name="message" rows="5" required></textarea>
-
-        <input type="hidden" name="_subject" value="New Quote Request">
-
-        <br><br>
-        <button type="submit">Send Quote Request</button>
+        <button type="submit" class="submit-button">Submit Quote Request</button>
     </form>
-
-    <p>
-        <a href="tel:+61438019859">
-            <button class="call-button">📞 Call test Excavating</button>
-        </a>
-    </p>
 </div>
 
 <footer>
-    <p>&copy; 2025 Test Excavating & Refining</p>
+    <p>&copy; 2025 Ben Excavating & Refining</p>
 </footer>
 
 </body>
